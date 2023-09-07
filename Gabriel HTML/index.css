@@ -1,0 +1,129 @@
+/*colocar charset*/
+
+:root{
+    /*configurar root*/
+    /*paleta de cores*/
+    /*fontes*/
+}
+
+*{
+    /*configurar corretamente*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*verificar se algo esta faltando*/
+
+header{
+    background-color: rgb(74, 74, 143); /*depois arrumar esse back*/
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 420px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nome{
+    background-color: aqua; /*configurar corretamente o nome (se precisar) */
+    font-size: 20px;
+}
+
+.menu{
+    background-color: rgb(74, 74, 143);
+    display: flex;
+    gap: 6%;
+}
+
+@media screen and (max-width: 667px) {
+    /* Estilos para telas menores */
+    .menu {
+        flex-direction: column; /* Coloca os itens em coluna */
+        padding-top: 10px;
+    }
+}
+
+#menu{
+    text-decoration: none;
+    background-color: rgb(189, 118, 255);
+    font-size: 24px;
+}
+
+main{
+    max-width: 100vw;
+    min-height: 84vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+
+.apresentaçao{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    width: 45%;
+}
+
+.introducao{
+    padding: 5% 0px;
+    flex-direction: column;
+    display: flex;                       /*essa distancia esta ok*/
+    align-items: center;
+    background-color: aqua;
+}
+
+.sobre{
+    padding: 8% 2%;
+    flex-direction: column;
+    display: flex;                         /*essa distancia esta ok*/
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.sobre .botao{
+    margin: 10% 0px 0px 0px;
+  /*essa distancia esta ok*/
+}
+
+.botao a{
+    padding: 4px 50px;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+}
+
+@media screen and (max-width: 367px){
+    .botao a{
+        padding: 4px 25px;
+        border: 2px solid black;
+        text-decoration: none;
+        background-color: blue;
+        color: white;
+    }
+    
+}
+
+img{
+    border-radius: 10%;
+    margin-bottom: 30%;
+}
+
+footer{
+    bottom: 0px;
+    text-align: end;
+    margin-right: 20%;
+}
