@@ -36,7 +36,7 @@ header{
 
 main{
     max-width: 100%;
-    min-height: 92vh;
+    min-height: 91.8vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
