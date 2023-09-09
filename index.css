@@ -18,53 +18,25 @@
 /*verificar se algo esta faltando*/
 
 body{
-    background-color: white;
     min-height: 100%;
+    background: linear-gradient(to bottom, #A258FA, #4e80ded0);
 }
 
 header{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 1%;
 }
 
-@media screen and (max-width: 420px) {
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.nome{
-    background-color: aqua; /*configurar corretamente o nome (se precisar) */
-    font-size: 20px;
-}
-
-.menu{
-    background-color: rgb(74, 74, 143);
-    display: flex;
-    gap: 6%;
-}
-
-@media screen and (max-width: 667px) {
-    /* Estilos para telas menores */
-    .menu {
-        flex-direction: column; /* Coloca os itens em coluna */
-        padding-top: 10px;
-    }
-}
-
-#menu{
+.link{
+    color: white;
     text-decoration: none;
-    background-color: rgb(189, 118, 255);
-    font-size: 24px;
+    font-size: 20px;
+    margin: 0px 1% 0px 1%;
 }
 
 main{
     max-width: 100%;
-    min-height: 83vh;
+    min-height: 92vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -74,6 +46,12 @@ main{
     margin-right: 6%;
 }
 
+@media screen and (max-width: 768px){
+    main{
+        display: block;
+        min-height: 100%;
+    }
+}
 
 .apresentaçao{
     background-color: brown;
@@ -81,6 +59,16 @@ main{
     align-items: center;
     flex-direction:column ;
     width: 45%;
+}
+
+@media screen and (max-width: 768px){
+    .apresentaçao{
+        display: block;
+        align-items: center;
+        margin: auto;
+        margin-top: 4%;
+        width: 225px;
+    }
 }
 
 .introducao{
@@ -99,6 +87,12 @@ main{
     background-color: blueviolet;
 }
 
+@media screen and (max-width){
+    .sobre{
+        padding: 100px;
+    }
+}
+
 .sobre .botao{
     margin: 10% 0px 0px 0px;
   /*essa distancia esta ok*/
@@ -115,7 +109,7 @@ main{
 
 @media screen and (max-width: 367px){
     .botao a{
-        padding: 4px 25px;
+        padding: 4px 15px;
         border: 2px solid black;
         text-decoration: none;
         background-color: blue;
@@ -127,11 +121,29 @@ main{
 img{
     border-radius: 10%;
     margin-bottom: 15%;
-    box-shadow: var(--cor-quatro) 2px 2px 12px;
+    box-shadow: var(--cor-quatro) 20px 20px 0px;
+    border: 1px solid black;
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        width: 200px;
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        margin-bottom: 0;
+    }
+
 }
 
 footer{
     bottom: 0px;
     text-align: end;
     margin-right: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        margin-top: 6%;
+    }
+    
 }
