@@ -71,6 +71,16 @@ main{
     width: 45%;
 }
 
+@media screen and (max-width: 768px){
+    .apresentaçao{
+        display: block;
+        align-items: center;
+        margin: auto;
+        margin-top: 4%;
+        width: 270px;
+    }
+}
+
 .introducao{
     padding: 5% 0px;
     flex-direction: column;
